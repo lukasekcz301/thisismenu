@@ -15,7 +15,7 @@ end
 local function corner(parent, radius)
 	local c = Instance.new("UICorner")
 	c.CornerRadius = UDim.new(0, radius)
-	c.Parent = parenta
+	c.Parent = parent
 end
 local GREEN = Color3.fromRGB(0, 255, 0)
 local SIDEBAR = Color3.fromRGB(35, 35, 40)
@@ -290,7 +290,6 @@ gu.BackgroundColor3 = GREEN
 local guFade = Instance.new("UIGradient")
 guFade.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(0.25, 0), NumberSequenceKeypoint.new(0.75, 0), NumberSequenceKeypoint.new(1, 1)})
 guFade.Parent = gu
-local placeName = game.PlaceId == 6516141723 and "lobby" or "???"
 local pl = mk("TextLabel", side)
 pl.Size = UDim2.new(1, 0, 0, 17)
 pl.Position = UDim2.new(0, 0, 1, -20)
@@ -299,7 +298,7 @@ pl.Font = FONT
 pl.TextSize = 13
 pl.TextColor3 = Color3.fromRGB(130, 130, 135)
 pl.TextXAlignment = Enum.TextXAlignment.Left
-pl.Text = "  place: " .. placeName
+pl.Text = "  place: lobby"
 local origSize, origPos = main.Size, main.Position
 local closedSize, closedPos = UDim2.new(0, 40, 0, 40), UDim2.new(0.5, -20, 0.5, -20)
 local isOpen, busy = true, false
