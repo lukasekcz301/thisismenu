@@ -1,0 +1,10 @@
+local id = game.PlaceId
+if id == 6516141723 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/lobby.lua"))()
+elseif id == 6839171747 then
+	if workspace:FindFirstChild("Backdoor_Table", true) then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thebackdoor.lua"))()
+	else
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thehotel.lua"))()
+	end
+end
