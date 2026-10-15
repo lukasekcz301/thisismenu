@@ -11,7 +11,7 @@ elseif id == 6839171747 then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thearchives.lua"))()
 	elseif room and room:FindFirstChild("StarterElevator") then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thestairwell.lua"))()
-	else
+	elseif assets and assets:FindFirstChild("Desk_Bell") then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thehotel.lua"))()
 	end
 end
