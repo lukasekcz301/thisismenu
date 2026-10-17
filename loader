@@ -5,12 +5,15 @@ elseif id == 6839171747 then
 	local rooms = workspace:FindFirstChild("CurrentRooms")
 	local room = rooms and rooms:FindFirstChild("0")
 	local assets = room and room:FindFirstChild("Assets")
+	local minecartSet = assets and assets:FindFirstChild("MinecartSet")
 	if assets and assets:FindFirstChild("Desk_Bell") then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thehotel.lua"))()
 	elseif workspace:FindFirstChild("Backdoor_Table", true) then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thebackdoor.lua"))()
 	elseif assets and assets:FindFirstChild("ArchivesOfficeChair") then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thearchives.lua"))()
+	elseif minecartSet and minecartSet:FindFirstChild("MinecartMoving") then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/themines.lua"))()
 	elseif room and room:FindFirstChild("StarterElevator") then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/lukasekcz301/thisismenu/refs/heads/main/thestairwell.lua"))()
 	end
